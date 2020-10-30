@@ -2,217 +2,52 @@
 
 <html>
   <head>
-    <title style="font-family:'Helvetica'">PERSONAS & STORYBOARDING</title>
+    <title>A/B Testing</title>
     <link rel="stylesheet" href="index.css">
     <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <style>
-      .img-container {
-        text-align: center;
-      }
-      * {
-        line-height: 1 cm;
-
-      }
-    </style>
   </head>
 
   <body>
+    <body style="background-color:lightgray;">
 
-    <!-- TODO: put your HTML code here! -->
-    <body style="background-color:powderblue;">
-    <h1 style="font-family:'Tahoma';text-align:center">PERSONAS & STORYBOARDING</h1>
-    <h3 style="font-family:'Helvetica'; text-align:center"> CSCI 1300: User Interfaces & User Experiences 2020 <h3>
-    <h6 style="font-family:'Helvetica';text-align:center"> This project is a close analysis done on microwaves, specifically in regards to its design, interface and challenges to its usability.
-      I utilized user expereience research techniques such as behavioral observation, user interviewing, persona creation, and
-      storyboarding. Although the microwave is known as a relatively "simple" interface, I was surprised to learn about a common challenge/confusion
-    of how to set the cook time and also an unwillingness to use other cook settings on the microwave.</h6>
+    <h1>A/B Testing</h1>
 
-<hr>
- <div class="img-container">
-  <img src=" IMG_0104.JPG" style="width:50%;"">
-</div>
-<p style="font-family:'Helvetica'; padding-bottom:10px">This interface heats up food products. The user can adjust the setting depending on what
-  they are microwaving and they can also choose the amount of time to heat up
-   their food by interacting with the buttons on the right hand panel.
-   To open the microwave door, the user pushes the button at the very bottom.</p>
+  <h5 style="font-family:'Helvetica'; font-style: italic; text-align:center">  For this project, I performed an A/B test and statistical analysis to gather insight into two different UI designs. <br>This is the link to the deployed app, (<a href="https://pacific-mountain-57020.herokuapp.com">AB test</a>), which opens interface A fifty percent of the time and B the other fifty percent of the time. <br>For this project, I used two metrics to evaluate the effect of the changes in the interface: time to completion and return rate.</h5>
+  <h2 style="font-family:'Helvetica';text-align:center"> Interface A </h2>
+  <img src="interfaceA.png" class="center" style="width:75%">
+  <p style="font-family:'Helvetica';text-align:center"> For interface A, I added bold text to the plant descriptions and prices. I did this to help with user readibility. </p>
+    <h2 style="font-family:'Helvetica';text-align:center"> Interface B </h2>
+  <img src="interfaceB.png" class="center" style="width:75%">
+  <p style="font-family:'Helvetica';text-align:center"> For interface A, I increased the size of the plant images. I did this to create a cleaner design overall with evenly spaced margin between each photo and the add to cart button. </p>
 
-<hr>
-<b style="font-style: italic; font-family:'Helvetica';padding-top:10px">User Observations</b>
-<p style="font-family:'Helvetica'"> Interviewee 1: </p>
-<ul>
-<li style="font-family:'Helvetica'" >Opened and closed microwave door easily</li>
-<li style="font-family:'Helvetica'" >Placed food in the center of microwave dish</li>
-<li style="font-family:'Helvetica'">She struggled to start, forgot to press clear before clicking on the number buttons to set the time</li>
-</ul>
+  <h2 style="font-family:'Helvetica';text-align:center"> Time to completion  </h2>
+    <p style="font-family:'Helvetica';text-align:center;font-style: italic;"> Time to completion can be defined as the time it took for the user to complete the task, which was to add at least 150 dollars worth of plants into the cart.</p>
+    <p style="font-family:'Helvetica';text-align:center"><b> Null Hypothesis: </b>There is no significant difference between the time it takes to order cacti with interface A and interface B because the changes made to the interface were relatively minor. Thus, the time to completion for A will be equal to B.</p>
+      <br>  <p style="font-family:'Helvetica';text-align:center"> <b>Alternative Hypothesis: </b>  The time to completion for A will be greater than that of B because the prices (and plant descriptions) are bolded in interface A; therefore, it will be easier (because of readability) for the user to complete the task. </p>
 
-<p style="font-family:'Helvetica'" > Interviewee 2:</p>
-<ul style="font-family:'Helvetica'">
-<li style="font-family:'Helvetica'">Opened and closed microwave door easily</li>
-<li style="font-family:'Helvetica'">Placed food in the center of microwave dish</li>
-<li style="font-family:'Helvetica'">Used the timer on accident instead of cook time - could not figur out how to set an exact time including seconds (e.g. 1 minute and 35 seconds)</li>
-</ul>
+      <h2 style="font-family:'Helvetica';text-align:center"> Return rate  </h2>
+      <p style="font-family:'Helvetica';text-align:center;font-style: italic;"> Return rate can be defined as the number of times a user returned to the home page after clicking checkout. </p>
+      <p style="font-family:'Helvetica';text-align:center" ><b> Null Hypothesis: </b> There is no significant difference between return rate for cacti with interface A and interface B because the changes made to the interface were relatively minor. Thus, the return rate for A will be equal to B. <br></p>
+        <p style="font-family:'Helvetica';text-align:center" >
+        <b>Alternative Hypothesis: </b> There is a significant difference between the number of times a user returned to the page on interface A and interface B because there is a difference in interface. For interface B, the plant descriptions and prices are bolded; whereas for interface B, the images of the plants are larger. Therefore, the return rate of A will not be equal to B. </p>
 
-<p style="font-family:'Helvetica'">Interviewee 3:</p>
-<ul>
-<li style="font-family:'Helvetica'">Opened and closed microwave door easily</li>
-<li style="font-family:'Helvetica'">Placed food in the center of microwave dish</li>
-<li style="font-family:'Helvetica'">Set time and started the microwave easily by selecting Cook Time and entering the amount of seconds manually with the number buttons</li>
-</ul>
+  <h2 style="font-family:'Helvetica';text-align:center"> Data collection process </h2>
+  <p style="font-family:'Helvetica';text-align:center">
+     I conducted data collection in order to test my hypotheses. I, first, distributed  the link to the interface to a multitude of users to complete the task. I was able to extract the time logs for when the user interacted with the interface: from whenever they clicked a button to either add to cart or go to cart,  to when (or if) they returned to the home page. This data was logged into an excel sheet. Next, I hand calculated time to completion for each user and noted whether they were viewing interface A or B. I also recorded whether or not the user returned to the home page. In order to analyze this raw data to test my hypotheses, I created a python script to run the statistical tests needed. These tests were used in order to calculate the p values for each metric. To find the p value for time to completion and return rate I used a two-tailed t test and chi squared test, respectively. </p>
 
-<hr>
-
-<b style="font-style: italic; font-family:'Helvetica'">Interview Questions</b>
-<ol>
-<li style="font-family:'Helvetica'">Why do you use the microwave? </li>
-<li style="font-family:'Helvetica'">What do you microwave?</li>
-<li style="font-family:'Helvetica'">What microwave settings do you use (e.g. fish, preheat, etc.)?</li>
-<li style="font-family:'Helvetica'">How often do you use the microwave?</li>
-<li style="font-family:'Helvetica'">What alternatives to the microwave do you use, if any? When do you use those vs the microwave and why? </li>
-<li style="font-family:'Helvetica'">What does the microwave do well? What do you like about the microwave as opposed to other heating systems? </li>
-<li style="font-family:'Helvetica'">What challenges are there when using the interface of the microwave?  </li>
-</ol>
-
-<hr>
-
-<b style="font-style: italic; font-family:'Helvetica'">Summary of Responses</b>
-<p style="font-family:'Helvetica'"> Interviewee 1: </p>
-<ul style="font-family:'Helvetica'">
-<li>Microwave is easy to use, does not require skill (less labor than cooking)</li>
-<li>Settings are confusing to them - does not understand what they do exactly</li>
-<li>Use for frozen foods, leftovers, to heat up room temperature/cold food</li>
-<li>Use everyday because they are too busy to cook in college (uses the microwave less often at home)
-</li>
-<li>Also uses stoves or ovens when they are cooking food with ingredients (i.e. anything other than frozen food and leftovers)</li>
-<li>Likes to multitask while microwaving (no need to watch the microwave unlike the stove)</li>
-<li>Challenges to interface: Cannot press any buttons to start until you clear the time - gets confused when the buttons are not working
-</li>
-</ul>
-
-<p style="font-family:'Helvetica'"> Interviewee 2: </p>
-<ul style="font-family:'Helvetica'">
-  <li>Microwaves most of their food (eats a lot of leftovers and frozen food)</li>
-  <li>Does not trust the settings on the microwaves because the microwave does not know how she likes her food</li>
-  <li>Does not use any alternatives to the microwave because they do not know how to use the oven or cook in general</li>
-  <li>Microwave is simple to use - put the food in and when it beeps you take it out</li>
-  <li>Challenges to interface: every microwave is different, there is a learning curve when using a new one </li>
-  <ul>
-      <li>E.g. How to set the time (being able to write out the time in seconds by just using the number buttons vs having to press cook time first)</li>
-    </ul>
-</ul>
-
-<p style="font-family:'Helvetica'"> Interviewee 3: </p>
-<ul style="font-family:'Helvetica'">
-  <li>Uses microwave for heating up food (e.g. leftovers, food that has gone cold, frozen foods, but not for cooking)</li>
-  <ul>
-        <li>Reasoning: some foods are not good to put in the microwave, e.g. a sandwich can get too soft or soggy from the microwave </li>
-      </ul>
-  <li>Only uses these settings: Add 30 seconds, Start, Cook time</li>
-  <li>Uses the microwave everyday</li>
-  <li>Alternatives to microwave: uses stove for bigger meals</li>
-  <li>Microwave is faster than other heating tools</li>
-  <ul>
-      <li>Important because she is busy, wants to eat when she wants instead of having to wait for her food on the stove or in the oven</li>
-    </ul>
-  <li>Challenges to interface: sometimes presses timer instead of cook time and then is confused as to why the food is not being microwaved</li>
-</ul>
-
-<hr>
-
-<b style="font-style: italic;font-family:'Helvetica'">Personas</b>
-<p style="font-family:'Helvetica'"> I constructed 2 personas by creating a four-quadrant empathy map,
-  describing what users think, feel, say, and do for one archetypal character that represents part of the spectrum of users I observed. </p>
-  <style>
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    font-family: Arial;
-  }
-
-  .header {
-    text-align: center;
-    padding: 32px;
-  }
-
-  .row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-
-  /* Create four equal columns that sits next to each other */
-  .column {
-    -ms-flex: 50%; /* IE10 */
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 10px;
-  }
-
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-  </style>
-  <body>
+    <h2 style="font-family:'Helvetica';text-align:center"> Infographic: Statistical conclusions </h2>
 
 
+  <img src="infoabactual.png" class="center">
+    <p style="font-family:'Helvetica';text-align:center"> In both cases, the p-value calculated is greater than 0.05; therefore, we fail to reject the null hypothesis in both cases. This means that for both time to completion and return rate, my results are statistically insignificant. In other words, there is a doubt as to whether the alternative hypothesis will repeat itself in other trials or situations.  From these results, we must fail to reject there was no difference in time to completion between Version A and Version B of my pages. These results also tell us that we must fail to reject that there was no difference in return rate between Version A and Version B of my pages. </p>
 
-  <!-- Photo Grid -->
-  <div class="row">
-    <div class="column">
-      <img src="uiux persona 1 final.jpg" style="width:100%">
+    <h2 style="font-family:'Helvetica';text-align:center"> Takeaways </h2>
+      <p style="font-family:'Helvetica';text-align:center">
+    There are limitations that may have affected the results of my test. For one, the data analysis may have been skewed since interface A had 15 users, while interface B had only 10 users. Also, the changes I made to interface A and B were relatively minor. Therefore, it may not have had a significant impact on the user's experience with both interfaces. Furthermore, the test users mass-completed this task of adding plants to the cart
+    for multiple other students also conducting similar A/B tests. It is possible that the users, overall, were able to complete this task at the same rate for both interface A and B because they were well-familiarized with the general interface (since many students' changes to interface A and B were not too drastic).</p>
+  <p style="font-family:'Helvetica';text-align:center">
+<br>Through this project I was able to reflect more about design choices and how they affect user experience. These design choices can have a significant impact on the user's ability to navigate the interface. However, since my AB test failed to reject the null for both metrics, I am unable to associate this analysis with my results (since the results proved inconclusive).</p>
 
-
-
-    </div>
-    <div class="column">
-      <img src="uiux persona 2 final.jpg" style="width:100%">
-
-
-    </div>
-  </div>
-
-<hr>
-
-<b style="font-style: italic; font-family; 'Helvetica'">Storyboarding</b>
-<p style="font-family:'Helvetica'"> This storyboard illustrates Busy Brandon's user journey from start to end. This storyboard reflects the goals of this persona and includes all necessary steps for using the microwave interface. </p>
-
-<div class="img-container">
-<img src="Screen Shot 2020-10-06 at 4.21.26 PM.png" style="width:80%">
-<img src="storyboard 2.png" style="width:80%">
-<img src="Screen Shot 2020-10-06 at 2.32.51 PM.png" style="width:80%">
-</div>
-
-<hr>
-
-<b style="font-style: italic; padding-top:10px; font-family:'Helvetica';text-align:center">Conclusion</b>
-<p style="font-family:'Helvetica'"> In conclusion, I learned how to critically examine simple everyday user interfaces like the microwave.
-  In addition, creating personas made me more aware of the many different ways users can interact with the same interface. I also was able to think more critically about the challenges that can come with seemingly intuitive or simple interfaces. </p>
-
-
-</body>
+  </body>
 </html>
